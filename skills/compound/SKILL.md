@@ -57,7 +57,7 @@ Each proposal should include:
 Add validation guidance to command templates.
 
 ### Target
-- `command/template.md` (new or existing)
+- `commands/template.md` (new or existing)
 
 ### Patch
 ```diff
@@ -71,8 +71,8 @@ Add validation guidance to command templates.
 ## Target Files
 
 Proposals can update:
-- `command/` - Slash commands in the opencode config
-- `skill/` - Skill definitions in the opencode config
+- `commands/` - Slash commands in the opencode config
+- `skills/` - Skill definitions in the opencode config
 - `AGENTS.md` - Global agent guidance
 - Any explicitly specified file path
 
@@ -90,7 +90,7 @@ Generate proposals **only** when:
 - There is a clearly actionable improvement
 - The user explicitly requests compounding
 - A pattern has been observed multiple times
-- The learning has direct implications for command/skill behavior
+- The learning has direct implications for commands/skills behavior
 
 Do **not** generate proposals for:
 - Generic reflections without actionable follow-ups
@@ -135,7 +135,7 @@ Proposal A: Add error handling pattern to command template
 
 Summary: Add error handling guidance to command templates.
 
-Target: `command/template.md`
+Target: `commands/template.md`
 
 Patch:
 ```diff
@@ -148,10 +148,10 @@ Patch:
 
 Applied 1 proposal(s):
 
-- `command/template.md`: Add error handling guidance
+- `commands/template.md`: Add error handling guidance
 
 Files modified:
-- `command/template.md`
+- `commands/template.md`
 ```
 
 ## Best Practices

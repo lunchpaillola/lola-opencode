@@ -51,8 +51,8 @@ Proposal [Letter]:
 Brief description of the change.
 
 ## Target
-- `command/filename.md`
-- `skill/compound/SKILL.md`
+- `commands/filename.md`
+- `skills/compound/SKILL.md`
 - `AGENTS.md`
 - Or other explicitly specified file
 
