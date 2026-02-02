@@ -1,0 +1,27 @@
+# OpenCode Setup & Skills
+
+This is my OpenCode setup I use while building at [Lunch Pail Labs](https://www.lunchpaillabs.com). It's just some settings, plugins, and skills I've picked up along the way.
+
+> Work in progress! I'm learning new things all the time and trying to keep this updated as I go.
+
+## What's Inside
+
+- **Settings & Configuration**: Some settings that work for me
+- **Skills I've Found**: Patterns and tools that have been helpful
+- **Plugins & Extensions**: Extensions I'm currently using
+
+## Feel Free to Use
+
+Everything here is open for you to grab, customize, or remix. Just point your OpenCode agent to this repo and ask it to:
+
+- Pull in any skills you like
+- Adapt the setup for your own workflow
+- Remix anything to fit your projects
+
+## Get in Touch
+
+Questions or want to collaborate?
+
+- [LinkedIn](https://www.linkedin.com/in/lolaojabowale)
+- [YouTube](https://youtube.com/playlist?list=PLtYkNv-KJw4bjT1bErr4RzEoyOYdOsRZX&si=0wtEhe5USQdlBHEm) – I document the journey of building at Lunch Pail Labs and how I use AI day-to-day
+- [Lunch Pail Labs](https://www.lunchpaillabs.com)
