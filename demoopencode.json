@@ -3,7 +3,8 @@
   "model": "opencode/minimax-m2.1-free",
   "plugin": ["@different-ai/opencode-browser"],
   "tools": {
-    "browser_*": false
+    "browser_*": false,
+    "google-workspace-official_*": false
   },
   "mcp": {
     "fireflies": {
@@ -23,6 +24,16 @@
       "type": "remote",
       "url": "http://127.0.0.1:3845/mcp",
       "enabled": false
+    },
+    "google-workspace-official": {
+      "type": "local",
+      "enabled": false,
+      "timeout": 120000,
+      "command": [
+        "bash",
+        "-lc",
+        "source \"$HOME/.nvm/nvm.sh\" && nvm use 22 >/dev/null && exec npx -y github:gemini-cli-extensions/workspace gemini-workspace-server"
+      ]
     },
     "clickup": {
       "type": "remote",
@@ -106,6 +117,100 @@
         "fireflies": false,
         "playwright": false,
         "figma": true
+      }
+    },
+    "google-docs": {
+      "description": "Google Docs focused workspace subagent",
+      "mode": "subagent",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false,
+        "google-workspace-official_docs_*": true,
+        "google-workspace-official_auth_*": true,
+        "google-workspace-official_time_*": true,
+        "google-workspace-official_people_*": true,
+        "google-workspace-official_chat_*": false
+      }
+    },
+    "google-slides": {
+      "description": "Google Slides focused workspace subagent",
+      "mode": "subagent",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false,
+        "google-workspace-official_slides_*": true,
+        "google-workspace-official_auth_*": true,
+        "google-workspace-official_time_*": true,
+        "google-workspace-official_people_*": true,
+        "google-workspace-official_chat_*": false
+      }
+    },
+    "google-sheets": {
+      "description": "Google Sheets focused workspace subagent",
+      "mode": "subagent",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false,
+        "google-workspace-official_sheets_*": true,
+        "google-workspace-official_auth_*": true,
+        "google-workspace-official_time_*": true,
+        "google-workspace-official_people_*": true,
+        "google-workspace-official_chat_*": false
+      }
+    },
+    "google-calendar": {
+      "description": "Google Calendar focused workspace subagent",
+      "mode": "subagent",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false,
+        "google-workspace-official_calendar_*": true,
+        "google-workspace-official_auth_*": true,
+        "google-workspace-official_time_*": true,
+        "google-workspace-official_people_*": true,
+        "google-workspace-official_chat_*": false
+      }
+    },
+    "google-drive": {
+      "description": "Google Drive focused workspace subagent",
+      "mode": "subagent",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false,
+        "google-workspace-official_drive_*": true,
+        "google-workspace-official_auth_*": true,
+        "google-workspace-official_time_*": true,
+        "google-workspace-official_people_*": true,
+        "google-workspace-official_chat_*": false
+      }
+    },
+    "google-mail": {
+      "description": "Read-only Gmail focused workspace subagent",
+      "mode": "subagent",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false,
+        "google-workspace-official_gmail_search": true,
+        "google-workspace-official_gmail_get": true,
+        "google-workspace-official_gmail_downloadAttachment": true,
+        "google-workspace-official_gmail_listLabels": true,
+        "google-workspace-official_gmail_modify": false,
+        "google-workspace-official_gmail_batchModify": false,
+        "google-workspace-official_gmail_modifyThread": false,
+        "google-workspace-official_gmail_send": false,
+        "google-workspace-official_gmail_createDraft": false,
+        "google-workspace-official_gmail_sendDraft": false,
+        "google-workspace-official_gmail_createLabel": false,
+        "google-workspace-official_auth_*": true,
+        "google-workspace-official_time_*": true,
+        "google-workspace-official_people_*": true,
+        "google-workspace-official_chat_*": false
       }
     },
     "browser": {

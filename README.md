@@ -30,6 +30,26 @@ This is my OpenCode setup I use while building at [Lunch Pail Labs](https://www.
 - [ralph-iterate](commands/ralph-iterate.md)
 - [review-code](commands/review-code.md)
 
+## Subagents At A Glance
+
+- [fireflies](demoopencode.json#L89)
+- [playwright](demoopencode.json#L100)
+- [figma](demoopencode.json#L111)
+- [google-docs](demoopencode.json#L122)
+- [google-slides](demoopencode.json#L136)
+- [google-sheets](demoopencode.json#L150)
+- [google-calendar](demoopencode.json#L164)
+- [google-drive](demoopencode.json#L178)
+- [google-mail](demoopencode.json#L192)
+
+## Google Workspace Setup
+
+Google Workspace MCP is configured in [demoopencode.json](demoopencode.json) as `google-workspace-official` and is disabled by default.
+
+- Enable the MCP entry: `mcp.google-workspace-official.enabled = true`
+- Turn on tools you want at top level (or just use the scoped Google subagents)
+- Use the built-in Google subagents for safer, focused access
+
 ## Skills At A Glance
 
 - [browser-automation](skills/browser-automation/SKILL.md)
