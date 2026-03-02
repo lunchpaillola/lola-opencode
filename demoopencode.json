@@ -219,6 +219,23 @@
       "tools": {
         "browser_*": true
       }
+    },
+    "obsidian": {
+      "description": "Obsidian operations agent using Obsidian CLI/headless via bash",
+      "mode": "subagent",
+      "prompt": "You are the Obsidian operations agent. Resolve vault before mutating operations. Prefer non-destructive actions and require explicit user intent for destructive operations.",
+      "permission": {
+        "skill": {
+          "obsidian-*": "allow",
+          "*": "allow"
+        }
+      },
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": true,
+        "browser_*": false
+      }
     }
   }
 }
