@@ -29,6 +29,7 @@ This is my OpenCode setup I use while building at [Lunch Pail Labs](https://www.
 - [ralph-convert](commands/ralph-convert.md)
 - [ralph-iterate](commands/ralph-iterate.md)
 - [review-code](commands/review-code.md)
+- [session-workflow-audit](commands/session-workflow-audit.md)
 
 ## Subagents At A Glance
 
